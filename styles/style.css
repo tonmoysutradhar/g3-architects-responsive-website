@@ -39,7 +39,8 @@ main {
 }
 .brand-name,
 .teams-title,
-.fact-title {
+.fact-title,
+.sponsor-title {
   font-weight: 700;
   font-size: 2.8125rem;
 }
@@ -178,7 +179,8 @@ main {
 }
 
 /* some facts style  */
-.fact-title {
+.fact-title,
+.sponsor-title {
   margin: 0;
 }
 .fact-text {
@@ -210,9 +212,25 @@ main {
   font-weight: 600;
   margin: 0;
 }
-
+/* sponsor style  */
 .sponsors {
+  text-align: center;
   margin: 130px 0 130px 0;
+}
+.sponsor-title {
+  margin-bottom: 24px;
+}
+.sponsor-detals {
+  max-width: 542px;
+  line-height: 26px;
+  margin: 0 auto;
+}
+.sponsors-img {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  gap: 30px;
 }
 
 /* responsive media query */
@@ -233,7 +251,8 @@ main {
   .experience h2 {
     font-size: 3rem;
   }
-  .cards {
+  .cards,
+  .sponsors-img {
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -247,7 +266,8 @@ main {
     padding: 20px 25px;
     left: 0px;
   }
-  .cards {
+  .cards,
+  .sponsors-img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
